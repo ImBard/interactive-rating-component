@@ -113,6 +113,11 @@ label {
 }
 
 label:active {
+  background-color: var(--Orange);
+  color: var(--White);
+}
+
+label:hover {
   background-color: var(--Light-Grey);
   color: var(--White);
 }
