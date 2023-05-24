@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;500;600;700&display=swap');
+
+:root {
+  --White: hsl(0, 0%, 100%);
+  --Light-Grey: hsl(217, 12%, 63%);
+  --Medium-Grey: hsl(216, 12%, 54%);
+  --Dark-Grey: hsl(211, 18%, 23%);
+  --Dark-Blue: hsl(213, 19%, 18%);
+  --Very-Dark-Blue: hsl(216, 12%, 8%);
+  --Orange: hsl(25, 97%, 53%)
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Overpass", sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100vw;
+  background-color: var(--Very-Dark-Blue);
+}
+
+.card {
+  background-color: var(--Dark-Blue);
+  padding: 35px 21px;
+  border-radius: 21px;
+  width: fit-content;
+  width: 380px;
+}
+
+.star {
+  background-color: var(--Dark-Grey);
+  display: flex;
+  width: fit-content;
+  padding: 16px;
+  border-radius: 50%;
+  margin-bottom: 21px;
+}
+
+.tksh1 {
+  color: var(--White);
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+h1 {
+  color: var(--White);
+  font-weight: 700;
+  margin-bottom: 13px;
+}
+
+.paragraph {
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--Light-Grey);
+  margin-bottom: 21px;
+}
+
+.tks {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.rating {
+  margin-bottom: 31px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.submit {
+  background-color: var(--Orange);
+  width: 100%;
+  color: var(--White);
+  border-radius: 30px;
+  padding: 13px;
+  border: none;
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.submit:hover {
+  background-color: var(--White);
+  color: var(--Orange);
+  outline: none;
+}
+
+label {
+  display: flex;
+  width: 50px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--Dark-Grey);
+  padding: 13px;
+  border-radius: 50%;
+  color: var(--Light-Grey);
+  cursor: pointer;
+}
+
+label:active {
+  background-color: var(--Light-Grey);
+  color: var(--White);
+}
+
+.active {
+  background-color: var(--Orange);
+  color: var(--White);
+}
+
+
+
+input[type="radio"] {
+  display: none;
+}
+
+.rated {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--Dark-Grey);
+  padding: 8px 18px;
+  width: fit-content;
+  text-align: center;
+  border-radius: 30px;
+  margin-block: 21px;
+  color: var(--Orange);
+  font-size: 15px;
+  height: 31px;
+}
